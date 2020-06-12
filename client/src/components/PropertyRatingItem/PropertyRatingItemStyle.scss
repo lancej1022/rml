@@ -1,0 +1,160 @@
+@import '../../styles/variables.scss';
+
+/* 
+Containers
+*/
+
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(211, 210, 210, 0.194);
+  border: 1px solid rgb(225, 225, 225);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+
+  margin-right: auto;
+  margin-left: auto;
+  color: #333;
+
+  @media (max-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+
+    .rating-container__left {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    max-width: 70%;
+    // margin: auto;
+  }
+}
+
+.top-rating {
+  margin: auto;
+}
+
+.ratings {
+  display: flex;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+  }
+}
+
+.rating-container__left {
+  margin-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
+}
+
+.rating-container__right {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding-left: 2rem;
+  border-left: 2px solid rgb(225, 225, 225);
+
+  @media screen and (max-width: $breakpoint-tablet) {
+    border-left: none;
+    padding-left: 0;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: space-between;
+  }
+}
+
+.rating-footer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    margin-right: 1rem;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+}
+
+/*
+2. fonts and text
+*/
+
+.rating-subheading {
+  margin-right: 3rem;
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+  background: rgb(228, 228, 228);
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.rating-heading,
+.rating-number {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.rating-heading {
+  @media screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    margin-right: 3rem;
+  }
+}
+
+.rating-number {
+  background: #487fee;
+  text-align: center;
+  color: white;
+  border-radius: 1rem;
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    min-width: 10rem;
+  }
+}
+
+.rating-comment {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.top-review {
+  background: $primary-light;
+  min-width: 20rem;
+  margin: 0 auto 1rem auto;
+}
+
+.timestamp {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* 
+3. images
+*/
+.property-image {
+  width: 45%;
+  margin-right: 2rem;
+
+  @media screen and (max-width: $breakpoint-desktop) {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
