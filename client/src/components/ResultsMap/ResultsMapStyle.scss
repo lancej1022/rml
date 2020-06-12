@@ -1,0 +1,100 @@
+@import '../../styles/variables.scss';
+
+h2.text-center {
+  color: #333;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+  //   text-decoration: underline;
+}
+
+.search-box {
+  width: 90%;
+  margin: 3rem auto 5rem;
+  padding: 1rem 0px;
+  //   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -5.8px 4.3px rgba(0, 0, 0, 0.024), 0 6.6px 11.9px rgba(0, 0, 0, 0.035),
+    0 28.5px 28.6px rgba(0, 0, 0, 0.046), 0 30px 95px rgba(0, 0, 0, 0.07);
+  border-radius: 1rem;
+  background: #fff;
+}
+.listing-block {
+  background: #fff;
+  height: 500px;
+  padding-top: 20px;
+  overflow-y: scroll;
+}
+
+.slim-scroll {
+  width: 41% !important;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    width: 100% !important;
+  }
+}
+.media {
+  background: #fff;
+  position: relative;
+  margin-bottom: 15px;
+}
+.media img {
+  width: 200px;
+  margin: 0;
+  height: 14rem;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    height: 20rem;
+  }
+}
+.media-body {
+  border: 1px solid #bcbcbc;
+  // border-left: 0;
+  height: 14rem;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    height: 20rem;
+  }
+}
+.media .price {
+  float: left;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4765ab;
+}
+.media .price small {
+  display: block;
+  font-size: 17px;
+  color: #232323;
+}
+.media .stats {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+}
+.media .stats span {
+  float: left;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.media .stats span i {
+  margin-right: 7px;
+  color: #4765ab;
+}
+.media .address {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #888;
+}
+.media .fav-box {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  top: 4px;
+  color: #e74c3c;
+}
+
+.map-box {
+  background-color: #a3ccff;
+}

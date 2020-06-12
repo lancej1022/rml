@@ -1,0 +1,122 @@
+@import '../../styles/variables.scss';
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #3f6fceec;
+  z-index: 200;
+  border-bottom: solid 1px transparent;
+  border-image: linear-gradient(to right, #487fee, #32fa95);
+  border-image-slice: 1;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.header_content {
+  height: 7.5rem;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.header.scrolled {
+  background: rgba(63, 111, 206, 0.85);
+}
+.header.scrolled .header_content {
+  height: 80px;
+}
+.logo {
+  width: 110px;
+}
+.logo img {
+  max-width: 100%;
+}
+.main_nav {
+  margin-left: 157px;
+}
+.main_nav ul li {
+  display: inline-block;
+}
+.main_nav ul li:not(:last-child) {
+  margin-right: 60px;
+}
+.main_nav ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.main_nav ul li.active a {
+  color: #ffffff;
+}
+.main_nav ul li a:hover {
+  color: #2cd983;
+}
+.phone_num {
+  height: 43px;
+  border-radius: 22px;
+  background: linear-gradient(to right, #487fee, #32fa95);
+  padding: 2px;
+  overflow: hidden;
+
+  @media screen and (max-width: $breakpoint-mobile) {
+    min-width: 20rem;
+    display: flex;
+
+    a:first-of-type {
+      display: none;
+    }
+  }
+}
+.phone_num_inner {
+  width: 100%;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 18px;
+  background: transparent;
+  border-radius: 20px;
+}
+.phone_num span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 11px;
+  line-height: 39px;
+}
+.phone_num span:hover {
+  border-bottom: 2px solid currentColor;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.hamburger i {
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.hamburger i:hover {
+  color: #2cd983;
+}
+.logo {
+  width: 350px;
+}
+.nav_title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+}
