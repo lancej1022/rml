@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './ResultsMapStyle.scss';
-import SearchResultItem from '../SearchResultItem/searchResultItem';
+import SearchResultItem from '../SearchResultItem';
 
 interface Props {
   results: any[];

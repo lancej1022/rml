@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction, Errback } from 'express';
-const db = require('../models/model.js');
+const db = require('../models/model.ts');
 
 const propertyController = {};
 

@@ -10,7 +10,7 @@ interface Props {
   rating: any;
 }
 
-const PropertyRatingItem: React.FC<Props> = ({ topRating, rating }) => {
+const PropertyRatingItem: React.FC = ({ topRating, rating }: Props) => {
   if (rating) {
     const months = {
       '01': 'January',

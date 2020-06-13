@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
-import './LoginSignup.scss';
+import './LoginSignupStyle.scss';
 
 interface Props {
   currView: string;
@@ -69,8 +69,8 @@ const LoginSignup: React.FC<Props> = ({ currView }) => {
               <img
                 src={
                   currView === 'login'
-                    ? '../../images/milestones_1.png'
-                    : '../../images/milestones_2.png'
+                    ? '../../../public/images/milestones_1.png'
+                    : '../../../public/images/milestones_2.png'
                 }
                 alt="apartments"
               />

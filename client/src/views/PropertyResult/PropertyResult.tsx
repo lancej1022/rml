@@ -7,7 +7,6 @@ import HeroSearch from '../../components/HeroSearch';
 
 import './PropertyResultStyle.scss';
 import PropertyRatingItem from '../../components/PropertyRatingItem';
-import { RouteProps, Route } from 'react-router-dom';
 
 // Receives the 'match' params from React router, which can be used to grab a property id
 const PropertyResult: React.FC<RouteComponentProps> = ({ match }) => {
